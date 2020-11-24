@@ -1,0 +1,80 @@
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after { content: ''; content: none; }
+
+q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* B-COLORS */
+/* E-COLORS */
+/* B-FONT */
+/* E-FONT */
+html { font-size: 16px; }
+
+body { margin: 0; font-size: 1rem; line-height: 1.25rem; font-family: "Nunito", Verdana, Helvetica, sans-serif; color: #373737; background: #F2F2F2; }
+
+header, footer, section, aside, article, div { box-sizing: border-box; }
+
+h1 { font-family: "Montserrat", Verdana, Helvetica, sans-serif; font-size: 2rem; line-height: 2.625rem; font-weight: 600; margin-bottom: 30px; }
+
+h2 { font-size: 1.5rem; line-height: 1.875rem; font-weight: 700; letter-spacing: 0.09899px; margin-bottom: 10px; }
+
+h3 { font-size: 1rem; line-height: 1.25rem; font-weight: 700; margin-bottom: 10px; }
+h3.left { text-align: left; }
+
+p { margin: 0; }
+
+a { text-decoration: none; color: #373737; }
+a.btn { text-decoration: none; color: #373737; background: #F8A000; border-radius: 24px; padding: 8px 20px; font-weight: 600; transition: padding 0.4s ease; margin-top: 20px; display: inline-block; }
+a.btn:hover { padding: 8px 25px; }
+
+figure { padding: 0; margin: 0; }
+figure img { max-width: 100%; height: auto; }
+
+header { width: 100%; border-top: solid 4px #F8A000; padding: 15px 30px; background: white; display: flex; justify-content: space-between; align-items: center; }
+header > div { display: flex; align-items: center; }
+header > div.left { justify-content: flex-start; }
+header > div.left .search { margin-left: 30px; position: relative; }
+header > div.left .search input[type="search"] { background: #F8F8F8; border-radius: 12px; border: 0; padding: 13px 34px 13px 65px; text-align: left; min-width: 575px; position: relative; z-index: 1; }
+header > div.left .search input[type="search"]::placeholder { font-family: "Nunito", Verdana, Helvetica, sans-serif; font-size: 1.125rem; line-height: 1.40625rem; color: #707275; }
+header > div.left .search button { overflow: hidden; position: absolute; z-index: 2; top: 50%; left: 25px; transform: translateY(-50%); width: 16px; height: 16px; background-image: url(../../images/search.svg); background-size: contain; background-position: 0 0; background-repeat: no-repeat; text-indent: -9999px; border: 0; }
+header > div.right { justify-content: flex-end; }
+header > div.right > div { margin-left: 20px; display: flex; align-items: center; padding-right: 20px; position: relative; cursor: pointer; font-weight: 700; }
+header > div.right > div:after { content: ""; position: absolute; z-index: 2; top: 50%; right: 0; transform: translateY(-50%); width: 13px; height: 6px; background-image: url(../../images/angle-down-o.svg); background-size: contain; background-position: 0 0; background-repeat: no-repeat; }
+
+nav { background: white; padding: 0 30px; }
+nav.navprimary { border-top: 1px solid rgba(112, 124, 144, 0.120274); box-shadow: 0px 3px 6px rgba(55, 55, 55, 0.1); position: relative; }
+nav.navprimary ul li:first-of-type a { margin: 0 25px 0 0; }
+nav.navprimary ul li a { font-size: 1.125rem; line-height: 1.40625rem; padding: 20px 0 15px 0; font-weight: 700; margin: 0 25px; display: block; }
+nav.navprimary ul li a:after { height: 4px; }
+nav.navfooter ul li:first-of-type a { margin: 0 20px 0 0; }
+nav.navfooter ul li a { margin: 0 20px; }
+nav ul { margin: 0; padding: 0; display: flex; align-items: center; justify-content: flex-start; }
+nav ul li { list-style: none; }
+nav ul li a { position: relative; }
+nav ul li a:after { content: ""; position: absolute; bottom: 0; left: 50%; height: 1px; width: 0; background: #F8A000; transition: width 0.4s ease, left 0.4s ease; }
+nav ul li a:hover:after, nav ul li a:active:after { width: 100%; left: 0; }
+
+footer { width: 100%; background: white; border-bottom: solid 4px #F8A000; padding: 20px 30px; display: flex; align-items: center; justify-content: flex-start; }
+
+section { display: flex; }
+section aside { background: #EAEAEC; width: 263px; padding: 15px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+section aside p:first-of-type { font-size: 1.5rem; line-height: 1.875rem; font-weight: 700; }
+section article { flex: 1 1 0; padding: 23px 32px 165px 32px; }
+section article .cards { display: flex; max-width: 770px; margin-bottom: 20px; }
+section article .cards .card { text-align: center; margin: 28px 15px 15px 15px; background: white; position: relative; border-radius: 12px; padding: 40px 15px 20px 15px; box-shadow: 0px 6px 12px rgba(74, 100, 160, 0.1); }
+section article .cards .card:first-of-type { margin: 28px 15px 15px 0; }
+section article .cards .card figure { position: absolute; width: 59px; height: 59px; background: white; border-radius: 4px; top: -28px; left: 50%; transform: translateX(-50%); box-shadow: 0px 3px 6px rgba(55, 55, 55, 0.1); }
+section article .cards .card p { text-align: left; }

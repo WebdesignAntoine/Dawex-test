@@ -1,0 +1,21 @@
+@import "styles/reset";
+@import "styles/variables";
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	font-size: 1rem;
+	line-height: rem(20);
+	font-family: $nunito;
+	color: $main;
+	background: $light;
+}
+
+@import "styles/base";
+@import "styles/header";
+@import "styles/nav";
+@import "styles/footer";
+@import "styles/content";

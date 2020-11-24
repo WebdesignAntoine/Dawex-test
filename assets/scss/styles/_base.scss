@@ -1,0 +1,57 @@
+header, footer, section, aside, article, div {box-sizing: border-box;}
+
+h1 {
+	font-family: $mont;
+	font-size: rem(32);
+	line-height: rem(42);
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+h2 {
+	font-size: rem(24);
+	line-height: rem(30);
+	font-weight: 700;
+	letter-spacing: 0.09899px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: rem(16);
+	line-height: rem(20);
+	font-weight: 700;
+	margin-bottom: 10px;
+	&.left {
+		text-align: left;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $main;
+	&.btn {
+		text-decoration: none;
+		color: $main;
+		background: $jaune;
+		border-radius: 24px;
+		padding: 8px 20px;
+		font-weight: 600;
+        transition: padding 0.4s ease;
+        margin-top: 20px;
+        display: inline-block;
+        &:hover {
+            padding: 8px 25px;
+        }
+	}
+}
+
+figure {
+	padding: 0;
+	margin: 0;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}

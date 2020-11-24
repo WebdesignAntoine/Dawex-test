@@ -1,0 +1,18 @@
+/* B-COLORS */
+$main:		#373737;
+$jaune:		#F8A000;
+$grey:		#EAEAEC;
+$light:		#F2F2F2;
+$input:		#F8F8F8;
+/* E-COLORS */
+
+/* B-FONT */
+$nunito: 'Nunito', Verdana, Helvetica, sans-serif;
+$mont: 'Montserrat', Verdana, Helvetica, sans-serif;
+
+// Calcul de la font en rem
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+/* E-FONT */
